@@ -20,4 +20,8 @@ apps:
 parts:
   fast-speedtest:
     plugin: nodejs
-    node-engine: 11.15.0
+    node-engine: 6.9.2
+    node-packages:
+      - git+https://github.com/Giannandrea/fast-speedtest-4domotz
+    build-packages:
+      - git
