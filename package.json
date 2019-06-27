@@ -1,0 +1,17 @@
+{
+  "name": "fast-speedtest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "bin": {
+		"fast": "./index.js"
+	},
+  "author": "Mauro Giannandrea",
+  "license": "MIT",
+  "dependencies": {
+    "asyncawait": "^1.0.8"
+  }
+}
