@@ -12,7 +12,7 @@ var options = {
 }
 var speedtest = new Api(options);
 
-speedtest.getSpeed().then(s => {
+speedtest.start().then(s => {
     console.log(`Final test result: `)
     console.log(`\tDownload Speed: ${s} Mbps`);
 }).catch(e => {
