@@ -6,9 +6,9 @@ var Api = apis.Api
 var options = {
     token: "YXNkZmFzZGxmbnNkYWZoYXNkZmhrYWxm",
     verbose: true, // default: false
-    timeout: 10000, // default: 5000
+    timeout: 15000, // default: 5000
     https: false, // default: true
-    bufferSize: 8, // default: 8
+    bufferSize: 64, // default: 8
 }
 var speedtest = new Api(options);
 
