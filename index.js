@@ -1,6 +1,6 @@
 #! /usr/bin/env node
 Promise = require('bluebird')
-var apis = require("./lib/api.js");
+var apis = require("./lib/Api.js");
 var Api = apis.Api
 
 var options = {
