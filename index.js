@@ -8,7 +8,7 @@ var options = {
     verbose: true, // default: false
     timeout: 15000, // default: 5000
     https: false, // default: true
-    bufferSize: 64, // default: 8
+    bufferSize: 256, // default: 8
 }
 var speedtest = new Api(options);
 
