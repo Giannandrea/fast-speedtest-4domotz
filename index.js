@@ -8,8 +8,8 @@ var options = {
     verbose: true, // default: false
     timeout: 15000, // default: 5000
     https: false, // default: true
-    bufferSize: 32, // default: 8
-    min_url_count: 4// default: depend by netflix
+    bufferSize: 8, // default: 8
+    min_url_count: 2// default: depend by netflix
 }
 var speedtest = new Api(options);
 
