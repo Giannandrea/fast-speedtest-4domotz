@@ -7,7 +7,7 @@ var options = {
     token: "YXNkZmFzZGxmbnNkYWZoYXNkZmhrYWxm",
     verbose: true, // default: false
     timeout: 15000, // default: 5000
-    https: false, // default: true
+    https: true, // default: true
     bufferSize: 4, // default: 8
     min_url_count: 2// default: depend by netflix
 }
