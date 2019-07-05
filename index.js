@@ -7,15 +7,16 @@ var options = {
     token: "YXNkZmFzZGxmbnNkYWZoYXNkZmhrYWxm",
     verbose: true, // default: false
     timeout: 15000, // default: 5000
-    https: true, // default: true
-    bufferSize: 4, // default: 8
-    min_url_count: 2// default: depend by netflix
+    https: false, // default: true
+    bufferSize: 3, // default: 8
+    min_url_count: 4,// default: depend by netflix
+    parallel_connections: 8
 }
 var speedtest = new Api(options);
 
 speedtest.start().then(function(s) {
     console.log("Final test result: ")
-    console.log("\tDownload Speed: "+s+" Mbps");
+    console.log("\tDownload Speed: "+s.speed+" "+s.unit);
 }).catch(function(e) {
     console.error(e.message);
 });
