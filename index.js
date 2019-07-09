@@ -34,7 +34,10 @@ var speedtest = new Api(options);
 
 speedtest.start().then(function(s) {
     console.log("Final test result: ")
-    console.log("\tDownload Speed: "+s.speed+" "+s.unit);
+    dspeed = s.dspeed
+    console.log("\tDownload Speed: "+dspeed.speed+" "+dspeed.unit);
+    console.log("\tMax ping time: "+s.ping.max+" ms");
+    console.log("\tMin ping time: "+s.ping.min+" ms");
 }).catch(function(e) {
     console.error(e.message);
 });
