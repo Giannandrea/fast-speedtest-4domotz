@@ -38,6 +38,7 @@ speedtest.start().then(function(s) {
     console.log("\tDownload Speed: "+dspeed.speed+" "+dspeed.unit);
     console.log("\tMax ping time: "+s.ping.max+" ms");
     console.log("\tMin ping time: "+s.ping.min+" ms");
+    console.log("\tAverage ping time: "+s.ping.average+" ms");
 }).catch(function(e) {
     console.error(e.message);
 });
